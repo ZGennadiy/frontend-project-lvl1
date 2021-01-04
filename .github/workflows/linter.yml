@@ -1,0 +1,7 @@
+name: Linter Checkout
+on: [push]
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - run: make lint
